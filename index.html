@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Vulnerabilidad Ecológica</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+</head>
+<body>
+    <video autoplay muted loop id="video-fondo">
+        <source src="fondo.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <div class="container">
+        <header>
+            <img src="logo.png" alt="Logo" class="logo">
+            <h1>Calculadora de Vulnerabilidad Ecológica</h1>
+        </header>
+         <h1>Calculadora de Vulnerabilidad Ecológica</h1>
+    </header>
+    <main>
+        <section id="formulario">
+            <h2>Selecciona la ciudad, el año y los indicadores:</h2>
+            <label for="ciudad">Ciudad:</label>
+            <select id="ciudad">
+                <option value="Lima">Lima</option>
+                <option value="OtraCiudad">Otra Ciudad</option>
+                <!-- Agrega más opciones según sea necesario -->
+            </select>
+            <label for="anio">Año:</label>
+            <input type="number" id="anio" min="2000" max="2100" value="2022">
+            <h3>Indicadores:</h3>
+            <div id="indicadores">
+                <input type="checkbox" id="calidad-aire" name="calidad-aire">
+                <label for="calidad-aire">Calidad del Aire</label><br>
+                <input type="checkbox" id="calidad-agua" name="calidad-agua">
+                <label for="calidad-agua">Calidad del Agua</label><br>
+                <!-- Agrega más indicadores aquí -->
+            </div>
+            <button id="calcular-btn">Calcular</button>
+        </section>
+        <section id="resultados">
+            <!-- Aquí se mostrarán los resultados -->
+        </section>
+    </main>
+    <footer>
+        <p>Desarrollado por [Tu Nombre]</p>
+    </footer>
+    </div>
+    <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
